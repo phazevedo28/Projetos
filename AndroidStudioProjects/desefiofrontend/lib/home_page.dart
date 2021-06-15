@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           Container(
-              height: MediaQuery.of(context).size.height * 0.03,
+              height: MediaQuery.of(context).padding.top,
               color: Colors.indigo[900]),
           TopPage(),
           _pages(context)
@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
 
   _pages(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.82,
+      height: MediaQuery.of(context).size.height * 0.81,
       width: MediaQuery.of(context).size.width * 1,
       color: Colors.white,
       child: PageView(
